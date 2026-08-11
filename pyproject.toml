@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keycombo"
+version = "0.1.0"
+description = "Envoie des combinaisons de touches personnalisées vers une seule application Windows cible."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Votre nom" }]
+
+dependencies = [
+    "pywin32; platform_system == 'Windows'",
+    "psutil",
+]
+
+[project.scripts]
+keycombo = "keycombo.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
