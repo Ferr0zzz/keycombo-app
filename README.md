@@ -96,17 +96,3 @@ Lettres et chiffres (`a`-`z`, `0`-`9`), modificateurs (`ctrl`, `shift`, `alt`,
 `win`), touches spéciales (`enter`, `tab`, `esc`, `space`, `backspace`,
 `delete`, `up`, `down`, `left`, `right`, `home`, `end`, `pageup`, `pagedown`,
 `f1` à `f12`).
-
-## Limites connues
-
-- Windows uniquement.
-- Certains jeux protégés (anti-triche) ou applications élevées ("exécuter en
-  administrateur") peuvent bloquer l'envoi de touches simulées si KeyCombo
-  n'est pas lui-même lancé en administrateur.
-- Si l'application cible se ferme et se rouvre, KeyCombo la retrouve
-  automatiquement via son nom d'exécutable (`.exe`), pas besoin de la
-  re-sélectionner.
-
-## Licence
-
-MIT — voir [LICENSE](LICENSE).
